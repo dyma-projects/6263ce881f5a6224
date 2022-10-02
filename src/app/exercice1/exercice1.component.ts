@@ -6,11 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice1.component.css']
 })
 export class Exercice1Component implements OnInit {
-  public compteur: number = 0; 
-
+resultat($event: any) {
+throw new Error('Method not implemented.');
+}
+  public compteur: number = 0;
+  public result: number = 0;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public decrement(compteur:number){
+    this.result = compteur;
+  }
+
+  public increment(compteur:number){
+    this.result = compteur;
   }
 
 }
